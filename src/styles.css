@@ -1,0 +1,61 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+}
+.background {
+  content: "";
+  position: center;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: inline-block;
+  background-image: url("bg.jpg");
+  background-repeat: repeat-x;
+  width: 1000px;
+  height: 800px;
+  max-width: 1000px;
+
+  filter: hue-rotate(195deg);
+}
+body {
+  background-color: black;
+  max-width: 650px;
+}
+.main {
+  filter: hue-rotate(0deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  margin-left: max(11%);
+
+  margin-right: 20%;
+  max-width: min(390px, 50%);
+  min-width: 150px;
+
+  display: inline-block;
+}
+
+.navbar {
+  color: white;
+  background-color: gray;
+}
+
+.copy {
+  padding: 6px;
+}
+.content {
+  padding-top: 4px;
+
+  margin-top: 50%;
+  background-color: white;
+}
